@@ -1,0 +1,35 @@
+.banner-section{
+    color:white;
+}
+.banner-section .banner-wrapper {
+    position: relative;
+    min-height: 300px;
+}
+.banner-section .banner-wrapper img{
+    position: absolute;
+    width: 120%;
+    transform: translate(-50%, -50%) scale(1.35);
+}
+@media screen and (max-width:991px){
+    .banner-section .banner-wrapper{
+         min-height: 280px;
+    }
+    .banner-section .banner-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    top: auto;
+    transform: translate(-50%, -50%) scale(1.25);
+    }
+}
+@media screen and (max-width:767px){
+     .banner-section .banner-wrapper {
+        min-height: 230px;
+    }
+    .banner-section .banner-wrapper img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    }
+}
