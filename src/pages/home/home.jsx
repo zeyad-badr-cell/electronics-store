@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSlider from "../../components/layout/hero/heroSlider";
-import { features, heroSlider,bannerDes, products, bannerDes1} from '../../constants/data';
+import { features,bannerDes, products, bannerDes1} from '../../constants/data';
 import { categories } from '../../constants/data';
 import CategoryCards from "../../components/layout/cards/categoryCards";
 import Banner from "../../components/layout/banner/banner";

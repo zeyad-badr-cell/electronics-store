@@ -1,5 +1,5 @@
 import  React, { useEffect, useRef } from 'react';
-import {motion, useInView,useAnimation, stagger, delay, transform, scale} from 'framer-motion';
+import {motion, useInView,useAnimation} from 'framer-motion';
 import "./banner.css";
 
 const Banner = ({bannerInfo})=> {
@@ -28,7 +28,7 @@ const Banner = ({bannerInfo})=> {
                 }
             });
             })();
-        },[inView]);
+        },[inView,textControls,imgControls]);
 
         const containerVariants = {
             hidden:{},

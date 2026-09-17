@@ -1,6 +1,6 @@
 import React,{useEffect, useRef} from "react";
 import './cards.css';
-import {motion,useInView, useAnimation, useScroll, useTransform} from "framer-motion"
+import {motion,useInView, useAnimation, useScroll} from "framer-motion"
 const ProductCards = ({ products, index = 0 }) => {
 
       const ref = useRef(null) ;
