@@ -1,6 +1,6 @@
 import React,{useEffect, useRef} from "react";
 import './cards.css';
-import {motion,useInView, useAnimation, useScroll} from "framer-motion"
+import {motion,useInView, useAnimation} from "framer-motion"
 const ProductCards = ({ products, index = 0 }) => {
 
       const ref = useRef(null) ;
@@ -29,12 +29,6 @@ const ProductCards = ({ products, index = 0 }) => {
             useEffect(()=>{
                 if(inView) controls.start("visible")
             },[inView,controls]);
-        
-            const {scrollYProgress}= useScroll(
-                {
-                    target:ref,
-                    offset : ["start end","end start"],
-                });
 
     return (
         <motion.div className="product-card-wrapper"
